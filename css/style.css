@@ -85,17 +85,17 @@
 
 
  @font-face {
-    font-family: 'Gillroy';
-    src: url('/font/Gilroy-Bold.eot') format('embedded-opentype'),
+    font-family: 'Absolem';
+    src: url('/font/ALS_Absolem_Sans\ Black_1.3.otf') format('embedded-opentype'),
  }
 
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Gilroy;
+    font-family: Absolem;
     font-style: normal;
-    color: #ff0000;
+    color: #00ff2a;
 }
 
 ul {
