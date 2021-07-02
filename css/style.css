@@ -1,6 +1,6 @@
 @import "reset.css";
 
-/* @font-face {
+@font-face {
     font-family: 'Gilroy';
     src: url('font/Gilroy-Bold.ttf') format('ttf'),
         url('font/Gilroy-Bold.eot') format('eot'),
@@ -26,7 +26,7 @@
     src: url('font/Gilroy-Thin.ttf') format('ttf'),
         url('font/Gilroy-Thin.eot') format('eot'),
         url('font/Gilroy-Thin.woff') format('woff'); 
-} */
+}
 
 /* @font-face {
     font-family: 'Gilroy';
@@ -80,7 +80,6 @@
             url('fonts/Gilroy-Bold.woff') format('woff'),
             url('fonts/Gilroy-Bold.ttf') format('truetype');
         font-display: swap;
-    
     }
 
 
