@@ -36,8 +36,8 @@ h1, h2, p, h1, div, ul, li {
 
 .score_gradient {  
     font-weight: bold;
-    font-size: 64px;
-    line-height: 79px;
+    font-size: 72px;
+    line-height: 89px;
     margin-bottom: 18px;
 
     background:  
@@ -371,4 +371,11 @@ section.tracker {
 
 .tracker_subheading, .walking_subheading, .wallking_text_wrapper {
     color: rgb(255, 255, 255);
+}
+
+
+.traker_tytle {
+    max-width: 683px;
+    min-width: min-content;
+    padding-left: 30px;
 }
