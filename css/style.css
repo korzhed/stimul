@@ -40,10 +40,17 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Absolem';
+ 
+    src: url('fonts/Als_Absolem_Sans Black_1.3.otf') format('otf'),
+    /* font-weight: 400; */
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Gilroy;
+    font-family: Absolem;
     font-style: normal;
     color: #B0B0B0;
 }
