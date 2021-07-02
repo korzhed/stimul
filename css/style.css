@@ -1,6 +1,6 @@
 @import "reset.css";
 
-@font-face {
+/* @font-face {
     font-family: 'Gilroy';
     src: url('font/Gilroy-Bold.ttf') format('ttf'),
         url('font/Gilroy-Bold.eot') format('eot'),
@@ -26,8 +26,19 @@
     src: url('font/Gilroy-Thin.ttf') format('ttf'),
         url('font/Gilroy-Thin.eot') format('eot'),
         url('font/Gilroy-Thin.woff') format('woff'); 
-}
+} */
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Bold.eot');
+    src: url('fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gilroy-Bold.woff') format('woff'),
+        url('fonts/Gilroy-Bold.ttf') format('truetype'),
+        url('fonts/Gilroy-Bold.svg#NewYork') format('svg');
+    /* font-weight: 400; */
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
     margin: 0;
