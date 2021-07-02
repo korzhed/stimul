@@ -51,6 +51,17 @@
         font-style: normal;
     }
 
+    @font-face {
+        font-family: 'Gilroy';
+        src: url('/font/');
+        src: local('/font/Gilroy Bold'), local('/font/Gilroy-Bold'),
+            url('/font/?#iefix') format('embedded-opentype'),
+            url('/font/Gilroy-Bold.woff') format('woff'),
+            url('/font/Gilroy-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
 
 
 /* @font-face {
