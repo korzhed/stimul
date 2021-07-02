@@ -1,0 +1,370 @@
+@import "reset.css";
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy, "PT Sans", "Arial", sans-serif;;
+    font-style: normal;
+    color: #B0B0B0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+h1, h2, p, h1, div, ul, li {
+    margin: 0;
+    padding: 0;
+    /* border: 0.2px solid rgba(238, 255, 0, 10%); */
+}
+
+
+.main_background_color {
+    background-color: #121212;
+}
+
+.score_gradient {  
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 79px;
+    margin-bottom: 18px;
+
+    background:  
+    -webkit-linear-gradient(left, #FFFFFF 0.07%, #CCCCCC 47.96%, #858585 99.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+}
+
+.plain_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;  
+}
+
+.factoid_percents {
+    font-weight: 250;
+    font-size: 100px;
+    margin-bottom: 51px;
+    margin-top: 75px;
+}
+
+.factoid_text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 26px;
+}
+
+.factoid_number {
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+}
+
+.main_title {
+    position: absolute;
+
+    top: calc(100vw * 0.119781);
+    left: 0;
+    right: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: calc(100vw * 0.8375);
+    height: calc(100vw * 0.175401);
+
+    z-index: 0;
+}
+
+.main_image {
+    position: absolute;
+
+    top: calc(100vw * 0.0859375);
+    left: calc(100% * 0.327083);
+
+    width: calc(100vw * 0.263020833);
+    height: calc(100vw * 0.369270833);
+
+    z-index: 1;   
+}
+
+
+.page_header {
+    width: 100%;
+    height: calc(100vw * 0.48);
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    gap:92px;
+
+    max-width: 1386px;
+    margin-bottom: 80px;
+
+    margin-right: auto;
+    margin-left:auto;
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+
+/* .description {
+    display: grid;
+    grid-template-columns: minmax(min-content, 916px) 1fr;
+    max-width: 1386px;
+    margin-bottom: 80px;
+    margin-right: auto;
+    margin-left:auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap:92px;
+} */
+
+
+
+
+
+.description_wrapper, .wallking_text_wrapper{
+    /* margin-left: 267px; */
+    padding-top: 38px;
+    max-width: 842px;
+}
+
+.description_wrapper {
+    /* margin-left: 267px; */
+    padding-top: 42px;
+    max-width: 842px;
+}
+
+
+.description_subheading_wrapper {
+    max-width: 665px;
+}
+
+/* .description_image_wrapper{
+    margin-left: 92px;
+    margin-right: auto;
+} */
+
+/* .benefit {
+    display: grid;
+    grid-template-columns: minmax(min-content, 668px) 1fr;
+} */
+
+
+.benefit_text_wrapper {
+    /* margin-left: 385px; */ 
+    max-width: 960px;
+    min-width: 350px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 220px;
+    padding-left: 30px;
+    padding-top: 8px;
+}
+.benefit_text_wrapper p {
+    max-width: 712px;
+    min-width: min-content;
+}
+
+.bendefit_list_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 358px));
+    gap:38px;
+
+    max-width: 1150px;  
+    min-width: 358px;
+
+    margin-left: auto;  
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 80px;
+}
+
+/* .factoid_list_item:not(:last-child) {
+    margin-right: 38px;
+} */
+
+.factoid_list_item {
+    margin-top: -4px;
+    min-width: 100px;
+}
+
+/* .wallking {
+width: 100%;
+height: 844px;
+margin-top: 171px;
+top: 2374.86px;
+
+background: #F13C00;
+
+display: grid;
+grid-template-columns: 648px 1fr;
+} */
+
+.wallking {
+    width: 100%;
+    /* height: 844px; */
+    margin-bottom: 80px;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 177px;
+    background: #F13C00;
+}
+
+.wallking_background {
+    width: 100%;
+    /* height: 844px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 1366px;
+
+    margin-top: 177px;
+    margin-bottom: 80px;
+    margin-right: auto;
+    margin-left:auto;
+    padding-top:85px;
+    padding-bottom: 85px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+
+    background: #F13C00;
+    /* background: #F13C00; */
+}
+    
+
+/* .wallking_image_wrapper {
+    margin-left: 258px;
+} */
+
+.wallking_text_wrapper {
+    max-width: 448px;
+
+    padding-right: 200px;
+    padding-bottom: 77px;
+}
+
+.wallking_text_wrapper,
+.wallking_image_wrapper {
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.facts_header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1430px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 93px;
+}
+.facts_heading{
+    max-width: 565px;
+    min-width: min-content;
+
+    padding-left: 30px;
+    /* margin-left: 72px; */
+}
+
+.facts_image_wrapper {
+    /* padding-right: 74px;
+    padding-right: 74px; */
+    width: calc(100vw * 0.38802083);
+    min-width: 415px;
+    height: max-content;
+
+    padding-left: 30px;
+    margin-right: 40px;
+    padding-bottom: 30px;
+}
+
+.facts_list_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 1145px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 135px;
+    padding-left: 30px;
+}
+.facts_list_item {
+    max-width: 358px;
+
+    margin-right: 35px;
+    margin-bottom: 64px;
+}
+
+.facts_list_item:last-child {
+    margin-right: 0;
+}
+
+.fact_list_item_text {
+    padding-top: 22px;
+}
+
+section.tracker {
+    position: relative;
+    margin-top: 158px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.tracker_text {
+        max-width: 448px;
+        margin-bottom: auto;
+        margin-top: auto;
+        padding-left: 30px;
+        z-index: 1;
+    
+}
+
+.tracker_mackbook_img {
+    margin-right: 15px;
+}
+
+.tracker_gradient_backround {
+    top: 120px;
+    position: absolute;
+    width: 100%;
+    height: 480px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    background: linear-gradient(
+270deg
+, #0B85FE 0.02%, #39C1F7 48.36%, #71E4ED 100.82%);
+    z-index: -2;
+}
+
+.tracker_macbook{
+    height: calc(100vw * 0.36875);
+    min-height: 360px;
+}
