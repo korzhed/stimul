@@ -90,6 +90,20 @@ h1, h2, p, h1, div, ul, li {
     z-index: 0;
 }
 
+.main_title_black {
+    
+    position: absolute;
+    
+    top: calc(100vw * 0.0859375);
+    left: calc(100% * 0.327083);
+    
+    width: calc(100vw * 0.263020833);
+    height: calc(100vw * 0.369270833);
+    
+    z-index: 2;   
+
+}
+
 .main_image {
     position: absolute;
 
@@ -101,6 +115,33 @@ h1, h2, p, h1, div, ul, li {
 
     z-index: 1;   
 }
+
+.main_title
+{
+    opacity: 0;
+  animation: fadein 2s ease-in;
+  animation-delay: 600ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+from{opacity:0}
+to{opacity:1}
+}
+
+.main_title_black
+{
+    opacity: 1;
+  animation: fadeout 2s ease-in;
+  animation-delay: 1200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout{
+from{opacity:1}
+to{opacity:0}
+}
+
 
 
 .page_header {
@@ -373,9 +414,30 @@ section.tracker {
     color: rgb(255, 255, 255);
 }
 
+.traker_tytle_subheading {
+    max-width: 681px;
+}
+
+.tracker_vidget_description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1385px;
+    
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 171px;
+}
+
 
 .traker_tytle {
     max-width: 683px;
     min-width: min-content;
     padding-left: 30px;
 }
+
+
+
+
+
