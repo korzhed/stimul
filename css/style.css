@@ -1,99 +1,15 @@
 @import "reset.css";
 
-@font-face {
-    font-family: 'Gilroy';
-    src: url('font/Gilroy-Bold.ttf') format('ttf'),
-        url('font/Gilroy-Bold.eot') format('eot'),
-        url('font/Gilroy-Bold.woff') format('woff'); 
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('font/Gilroy-Medium.ttf') format('ttf'),
-        url('font/Gilroy-Medium.eot') format('eot'),
-        url('font/Gilroy-Medium.woff') format('woff'); 
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('font/Gilroy-Light.ttf') format('ttf'),
-        url('font/Gilroy-Light.eot') format('eot'),
-        url('font/Gilroy-Light.woff') format('woff'); 
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('font/Gilroy-Thin.ttf') format('ttf'),
-        url('font/Gilroy-Thin.eot') format('eot'),
-        url('font/Gilroy-Thin.woff') format('woff'); 
-}
-
-/* @font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Bold.eot') format('embedded-opentype');
-    src: url('fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Gilroy-Bold.woff') format('woff'),
-        url('fonts/Gilroy-Bold.ttf') format('truetype'),
-    /* font-weight: 400; */
-    /* font-style: normal;
-    font-display: swap; */
-
-
-
-    @font-face {
-        font-family: 'Gilroy';
-        src: url('Gilroy-Bold.eot');
-        src: local('Gilroy Bold'), local('Gilroy-Bold'),
-            url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-            url('Gilroy-Bold.woff') format('woff'),
-            url('Gilroy-Bold.ttf') format('truetype');
-        font-weight: bold;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Gilroy';
-        src: url('/font/Gilroy-Bold.eot');
-        src: local('/font/Gilroy Bold'), local('/font/Gilroy-Bold'),
-            url('/font/?#iefix') format('embedded-opentype'),
-            url('/font/Gilroy-Bold.woff') format('woff'),
-            url('/font/Gilroy-Bold.ttf') format('truetype');
-        font-weight: bold;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Gilroy';
-        src: url('font/Gilroy-Bold.eot');
-        src: local('font/Gilroy Bold'), local('font/Gilroy-Bold'),
-            url('font/?#iefix') format('embedded-opentype'),
-            url('font/Gilroy-Bold.woff') format('woff'),
-            url('font/Gilroy-Bold.ttf') format('truetype');
-        font-weight: bold;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Gilroy';
-        src: url('fonts/Gilroy-Bold.eot');
-        src: url('fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-            url('fonts/Gilroy-Bold.woff') format('woff'),
-            url('fonts/Gilroy-Bold.ttf') format('truetype');
-        font-display: swap;
-    }
-
-
-
  @font-face {
-    font-family: 'Absolem';
-    src: url('/font/ALS_Absolem_Sans\ Black_1.3.otf') format('embedded-opentype'),
+    font-family: 'Gilroy';
+    src: url('/font/Gilroy-Bold.otf') format('embedded-opentype'),
  }
 
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Absolem;
+    font-family: Gilroy;
     font-style: normal;
     color: #00ff2a;
 }
