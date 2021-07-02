@@ -4,9 +4,33 @@
     font-family: 'Gilroy';
     src: url('font/Gilroy-Bold.ttf') format('ttf'),
         url('font/Gilroy-Bold.eot') format('eot'),
-        url('font/Gilroy-Bold.woff') format('woff');
-    
+        url('font/Gilroy-Bold.woff') format('woff'); 
 }
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('font/Gilroy-Medium.ttf') format('ttf'),
+        url('font/Gilroy-Medium.eot') format('eot'),
+        url('font/Gilroy-Medium.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('font/Gilroy-Light.ttf') format('ttf'),
+        url('font/Gilroy-Light.eot') format('eot'),
+        url('font/Gilroy-Light.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('font/Gilroy-Thin.ttf') format('ttf'),
+        url('font/Gilroy-Thin.eot') format('eot'),
+        url('font/Gilroy-Thin.woff') format('woff'); 
+}
+
+
+
+
 
 
 
