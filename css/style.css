@@ -368,3 +368,7 @@ section.tracker {
     height: calc(100vw * 0.36875);
     min-height: 360px;
 }
+
+.tracker_subheading, .walking_subheading, .wallking_text_wrapper {
+    color: rgb(255, 255, 255);
+}
