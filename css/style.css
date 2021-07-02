@@ -53,7 +53,7 @@
 
     @font-face {
         font-family: 'Gilroy';
-        src: url('/font/');
+        src: url('/font/Gilroy-Bold.eot');
         src: local('/font/Gilroy Bold'), local('/font/Gilroy-Bold'),
             url('/font/?#iefix') format('embedded-opentype'),
             url('/font/Gilroy-Bold.woff') format('woff'),
@@ -61,13 +61,14 @@
         font-weight: bold;
         font-style: normal;
     }
+    
 
 
 
-/* @font-face {
-    font-family: 'Absolem';
-    src: url('fonts/Als_Absolem_Sans Black_1.3.otf') format('otf'),
-    /* font-weight: 400; */
+ @font-face {
+    font-family: 'Gillroy';
+    src: url('/font/Gilroy-Bold.eot') format('embedded-opentype'),
+ }
 
 
 body {
