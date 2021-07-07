@@ -1,10 +1,6 @@
 @import "reset.css";
-@import url("/font/Gilroy/stylesheet.css")
+@import url("/font/Gilroy/stylesheet.css");
 
- /* @font-face {
-    font-family: 'Gilroy';
-    src: url('/font/Gilroy-Bold.otf') format('embedded-opentype'),
- } */
 
 
 body {
@@ -13,7 +9,6 @@ body {
     font-family: Gilroy;
     font-style: normal;
     color: white;
-
 }
 
 
