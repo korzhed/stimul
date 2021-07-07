@@ -1,9 +1,10 @@
 @import "reset.css";
+@import url("/font/Gilroy/stylesheet.css")
 
- @font-face {
+ /* @font-face {
     font-family: 'Gilroy';
     src: url('/font/Gilroy-Bold.otf') format('embedded-opentype'),
- }
+ } */
 
 
 body {
@@ -11,8 +12,10 @@ body {
     padding: 0;
     font-family: Gilroy;
     font-style: normal;
-    color: #0400ff;
+    color: white;
+
 }
+
 
 ul {
     margin: 0;
@@ -121,18 +124,35 @@ h1, h2, p, h1, div, ul, li {
     z-index: 1;   
 }
 
-.main_title
+ /* .main_title
 {
-    opacity: 0;
+    
+opacity: 0;
   animation: fadein 2s ease-in;
+  
   animation-delay: 600ms;
   animation-fill-mode: forwards;
+}  */
+
+
+
+.main_title{
+    filter: blur(20px);
+    animation: blur 2s ease-in;
+    animation-delay: 600ms;
+  animation-fill-mode: forwards;
 }
+
 
 @keyframes fadein{
 from{opacity:0}
 to{opacity:1}
 }
+
+@-webkit-keyframes blur{
+    from{-webkit-filter:blur(20px)}
+    to{-webkit-filter:blur(0)}
+    }
 
 .main_title_black
 {
