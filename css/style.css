@@ -121,33 +121,38 @@ h1, h2, p, h1, div, ul, li {
 
  .main_title
 {   
-    -webkit-opacity: 0;
+
+    /* opacity: 0; */
     -webkit-animation: fadein 2s ease-in;
+    animation: fadein 2s ease-in;
+    /* filter: blur(20px); */
+    /* filter: opacity(0%) blur(20px); */
     -webkit-filter: blur(20px);
+    -webkit-filter: opacity(0%));
     -webkit-animation-delay: 600ms;
     -webkit-animation-fill-mode: forwards;
-    opacity: 0;
-    animation: fadein 2s ease-in;
     filter: blur(20px);
+    filter: opacity(0%);
     animation-delay: 600ms;
     animation-fill-mode: forwards;
 } 
 
 
-@-webkit-keyframes fadein{
-0%{filter:opacity(0%) blur(20px);}
-100%{filter:opacity(100%) blur(0px);}
-}
 
-@keyframes fadein{
+@-webkit-keyframes fadein{
+    /* 0%{filter:opacity(0%) blur(20px);}
+    100%{filter:opacity(100%) blur(0px);} */
     0%{filter:opacity(0%) blur(20px);}
     100%{filter:opacity(100%) blur(0px);}
     }
 
-/* @-webkit-keyframes blur{
-    from{-webkit-filter:blur(20px)}
-    to{-webkit-filter:blur(0)}
-    } */
+@keyframes fadein{
+        /* 0%{filter:opacity(0%) blur(20px);}
+        100%{filter:opacity(100%) blur(0px);} */
+        0%{filter:opacity(0%) blur(20px);}
+        100%{filter:opacity(100%) blur(0px);}
+        }
+
 
 .main_title_black
 {
