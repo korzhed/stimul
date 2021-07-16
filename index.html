@@ -211,52 +211,49 @@
             </ul>
         </section>
         <section class="contact_form">
-            <div class="form_header">
-                <h2 class="score_gradient" id="second">Вашему бизнесу
-                    нужен стимул?</h2>
-                <p class="plain_text">Заполните форму, чтобы узнать больше о Стимуле для своей организации.
-                </p>
-                <p class="plain_text">Один из наших экспертов свяжется с вами в ближайшее время.</p>
+            <div class="form_wrapper">
+                <div class="form_header">
+                    <h2 class="score_gradient" id="second">Вашему бизнесу
+                        нужен стимул?</h2>
+                    <p class="plain_text">Заполните форму, чтобы узнать больше о Стимуле для своей организации.
+                    </p>
+                    <p class="plain_text">Один из наших экспертов свяжется с вами в ближайшее время.</p>
+                </div>
+                <form class="form_field" action="" method="get" onsubmit="return false">
+                        <div class="form_form">
+                            <div class="form_fied_item">
+                                <label class="form_label" for="name">Имя</label>
+                                <input class="form_input" type="text" id="name" name="user_name">
+                            </div>
+                            <div class="form_fied_item">
+                                <label class="form_label" for="second_name">Фамилия</label>
+                                <input class="form_input" type="text" id="second_name" name="user_second_name">
+                            </div>
+                            <div class="form_fied_item">
+                                <label class="form_label" for="organization_title">Название организации</label>
+                                <input class="form_input" type="text" id="organization_title" name="user_organization_title">
+                            </div>
+                            <div class="form_fied_item">
+                                <label class="form_label classy" for="job_title">Должность</label>
+                                <input class="form_input" type="text" id="job_title" name="user_job_title">
+                            </div>
+                            <div class="form_fied_item">
+                                <label class="form_label" for="mail">Электронная почта</label>
+                                <input class="form_input" type="email" id="mail" name="user_mail">
+                            </div>
+                            <div class="form_fied_item">
+                                <label class="form_label" for="phone">Номер телефона</label>
+                                <input class="form_input" type="tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" id="phone" name="telephone">
+                            </div>
+                
+                            <div class="form_fied_item form_field_comment">
+                                <label class="form_comment" for="comment">Комментарий</label>
+                                <textarea class="form_field_comment form_field_comment_area" id="comment" name="user_comment" cols="30" rows="10"></textarea>
+                            </div>
+                            <div><button class="button" type="submit" >Отправить</button></div>
+                        </div>
+                </form>
             </div>
-
-            <form class="form_field" action="" method="get" onsubmit="return false">
-                    <div class="form_form">
-                        <div class="form_fied_item">
-                            <label class="form_label" for="name">Имя</label>
-                            <input class="form_input" type="text" id="name" name="user_name">
-                        </div>
-                        <div class="form_fied_item">
-                            <label class="form_label" for="second_name">Фамилия</label>
-                            <input class="form_input" type="text" id="second_name" name="user_second_name">
-                        </div>
-                        <div class="form_fied_item">
-                            <label class="form_label" for="organization_title">Название организации</label>
-                            <input class="form_input" type="text" id="organization_title" name="user_organization_title">
-                        </div>
-
-                        <div class="form_fied_item">
-                            <label class="form_label classy" for="job_title">Должность</label>
-                            <input class="form_input" type="text" id="job_title" name="user_job_title">
-                        </div>
-
-                        <div class="form_fied_item">
-                            <label class="form_label" for="mail">Электронная почта</label>
-                            <input class="form_input" type="email" id="mail" name="user_mail">
-                        </div>
-
-                        <div class="form_fied_item">
-                            <label class="form_label" for="phone">Номер телефона</label>
-                            <input class="form_input" type="tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" id="phone" name="telephone">
-                        </div>
-                        
-                        <div class="form_fied_item form_field_comment">
-                            <label class="form_comment" for="comment">Комментарий</label>
-                            <textarea class="form_field_comment form_field_comment_area" id="comment" name="user_comment" cols="30" rows="10"></textarea>
-                        </div>
-
-                        <div><button class="button" type="submit" >Отправить</button></div>
-                    </div>
-            </form>
         </section>
     </main>
     <footer >
