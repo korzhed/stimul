@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js\script.js"></script>
+
 
     <!-- <style media="screen">
         body {
@@ -31,10 +35,15 @@
 </head>
 <body class="main_background_color">
     <header>
+        <div class="header" id="navBar">
+            <img class="main_logo" src="img/Vector_logo.png" alt="логотип">
+            <button class="button ne" onclick="smoothScroll(document.getElementById('second'))">Отправить</button>
+        </div>
 
         <div class="page_header">
             <img class="main_title_black" src="img/main_title_picture@1x_black.png" alt="">
             <img class="main_title" src="img/Vector@1x.png" alt="">
+            <!-- <img class="main_title_blur" src="img/Vector@1x.png" alt=""> -->
             <img class="main_image" src="img/main_title_picture@1x.png" alt=""><img src="" alt="">
         </div>
     </header>
@@ -59,15 +68,15 @@
                          <ul class="bendefit_list_wrapper">
                             <li class="factoid_list_item">
                                 <span class="factoid_percents">50%</span>
-                                <p class="factoid_text">сотрудников уверены, что недостаточная физическая активность пагубно сказывается на работе</p>
+                                <p class="factoid_text plain_text_color">сотрудников уверены, что недостаточная физическая активность пагубно сказывается на работе</p>
                             </li>
                             <li class="factoid_list_item">
                                 <span class="factoid_percents">90%</span>
-                                <p class="factoid_text">уверены, что работодатель должен участвовать в профилактике и укрепление здоровья сотрудников</p>
+                                <p class="factoid_text plain_text_color">уверены, что работодатель должен участвовать в профилактике и укрепление здоровья сотрудников</p>
                             </li>
                             <li class="factoid_list_item">
                                 <span class="factoid_percents">90%</span>
-                                <p class="factoid_text">работодателей отметили, что забота о благополучии работников является частью корпоративной культуры</p>
+                                <p class="factoid_text plain_text_color">работодателей отметили, что забота о благополучии работников является частью корпоративной культуры</p>
                             </li>
                          </ul>
                      </section>
@@ -75,7 +84,7 @@
         <section class="wallking">
             <div class="wallking_background">
                 <div class="wallking_text_wrapper">
-                    <h2 class="score_gradient">Первый шаг
+                    <h2 class="score_gradient not_grad">Первый шаг
                         к здоровью
                         бизнеса</h2>
                     <p class="plain_text walking_subheading">Ходьба дает множество преимуществ для здоровья людям любого возраста и уровня физической подготовки. Это также может помочь предотвратить некоторые заболевания и даже продлить жизнь. </p>
@@ -94,15 +103,15 @@
             <ul class="facts_list_wrapper">
                 <li class="facts_list_item">
                     <span class="factoid_number">01</span>
-                    <p class="plain_text fact_list_item_text">Те, кто тренируется хотя бы 30 минут почти ежедневно , на 30 процентов чаще говорят, что они в целом счастливы, чем те, кто не тренируется.</p>
+                    <p class="plain_text fact_list_item_text plain_text_color">Те, кто тренируется хотя бы 30 минут почти ежедневно , на 30 процентов чаще говорят, что они в целом счастливы, чем те, кто не тренируется.</p>
                 </li>
                 <li class="facts_list_item">
                     <span class="factoid_number">02</span>
-                    <p class="plain_text fact_list_item_text">Эти сотрудники активно инвестируют в их здоровье оправиться от болезни быстрее , и имеют более производительность целом. </p>
+                    <p class="plain_text fact_list_item_text plain_text_color">Эти сотрудники активно инвестируют в их здоровье оправиться от болезни быстрее , и имеют более производительность целом. </p>
                 </li>
                 <li class="facts_list_item">
                     <span class="factoid_number">03</span>
-                    <p class="plain_text fact_list_item_text">Здоровые сотрудники также экономят ваши деньги. Медицинские расходы могут быть на 21% выше для сотрудников с самым низким уровнем вовлеченности в здоровье.</p>
+                    <p class="plain_text fact_list_item_text plain_text_color">Здоровые сотрудники также экономят ваши деньги. Медицинские расходы могут быть на 21% выше для сотрудников с самым низким уровнем вовлеченности в здоровье.</p>
                 </li>
             </ul>
         </section>
@@ -113,7 +122,7 @@
             </div>
 
             <div class="tracker_text">
-                <h2 class="score_gradient tracker_heading">Стимул-
+                <h2 class="score_gradient tracker_heading not_grad">Стимул-
                     трекер</h2>
                 <p class="plain_text tracker_subheading">Стимул-трекер - это приложение для управления временем и задачами. Тысячи пользователей по всему миру используют наше приложение и добились повышения эффективности.</p>
             </div>
@@ -128,38 +137,40 @@
                 </div>
                 <img src="img/stimul_traker_vidget.png" alt="виджеты приложения стимул-трекер для MacOS">
             </div>
-            <ul>
-                <li>
-                    <object type="image/svg+xml" data="svg/icn_rev.svg" width="52" height="50" ></object>
-                    <h3>Повторить действие</h3>
-                    <p class="plain_text">Частые задачи больше не нужно добавлять каждый раз
+            <ul class="tracker_list">
+                <li class="tracker_list_item">
+                    <object class="svgimage" type="image/svg+xml" data="svg/icn_rev.svg" width="52" height="50" ></object>
+                    <h3  class="tracker_description_header">Повторить действие</h3>
+                    <p class="plain_text plain_text_color">Частые задачи больше не нужно добавлять каждый раз
                     </p>
                 </li>
-                <li>
-                    <object type="image/svg+xml" data="svg/icn_tomat.svg" width="52" height="50" ></object>
-                    <h3>Техника
+                <li class="tracker_list_item">
+                    <object class="svgimage" type="image/svg+xml" data="svg/icn_tomat.svg" width="52" height="50" ></object>
+                    <h3  class="tracker_description_header">Техника
                         помидор</h3>
-                    <p class="plain_text">Позволит сконцентрироваться на работе, эффективно завершить работу и попрощаться с откладыванием
+                    <p class="plain_text plain_text_color">Позволит сконцентрироваться на работе, эффективно завершить работу и попрощаться с откладыванием
                     </p>
                 </li>
-                <li>
-                    <object type="image/svg+xml" data="svg/icn_remind.svg" width="52" height="50" ></object>
-                    <h3>Установить срок</h3>
-                    <p class="plain_text">Возможность устанавливать сроки для каждой задачи, чтобы не пропустить ни один дедлайн
+                <li class="tracker_list_item">
+                    <object class="svgimage" type="image/svg+xml" data="svg/icn_remind.svg" width="52" height="50" ></object>
+                    <h3  class="tracker_description_header">Установить срок</h3>
+                    <p class="plain_text plain_text_color">Возможность устанавливать сроки для каждой задачи, чтобы не пропустить ни один дедлайн
                     </p>
                 </li>
-                <li>
-                    <object type="image/svg+xml" data="svg/icn_gdj.svg" width="52" height="50" ></object>
-                    <h3>На всех устройствах</h3>
-                    <p class="plain_text">Синхронизирует данные между несколькими устройствами
+                <li class="tracker_list_item">
+                    <object class="svgimage" type="image/svg+xml" data="svg/icn_gdj.svg" width="52" height="50" ></object>
+                    <h3 class="tracker_description_header">На всех устройствах</h3>
+                    <p class="plain_text plain_text_color">Синхронизирует данные между несколькими устройствами
                     </p>
                 </li>
         </section>
             <section class="futures">
-                <h2 class="score_gradient">Новые возможности</h2>
-                <p class="plain_text">Ваша команда полностью контролирует свою активность с помощью приложения мирового класса</p>
-                <ul>
-                    <li><img src="" alt=""></li>
+                <div class="futures_heading_wrapper">
+                    <h2 class="score_gradient">Новые возможности</h2>
+                    <p class="plain_text">Ваша команда полностью контролирует свою активность с помощью приложения мирового класса</p>
+                </div>
+                <ul class="view_image">
+                    <li><img src="img\image_lane.png" alt="экраны мобильных телефонов"></li>
                     <li><img src="" alt=""></li>
                     <li><img src="" alt=""></li>
                     <li><img src="" alt=""></li>
@@ -172,65 +183,79 @@
             </section>
 
         <section class="branding">
-            <img src="" alt="">
-            <img src="" alt="">
-            <h2 class="score_gradient">Брендированные аксессуары от наших партнеров</h2>
-            <p class="plain_text">Спортивный инвентарь и гаджеты от вашего бренда станут прекрасной наградой для сотрудников делающих себя лучше. Здоровые и лояльяные кадры — хорошая реклама бренда работодателя</p>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
+            <img class="branding_background" src="img\Vector.png" alt="">
+            <img class="branding_object" src="img\sber_asics_2 1.png" alt="">
+            <div class="branding_text_wrapper">
+                <div class="branding_header_wrapper">
+                    <h2 class="score_gradient">Брендированные аксессуары от наших партнеров</h2>
+                    <p class="plain_text">Спортивный инвентарь и гаджеты от вашего бренда станут прекрасной наградой для сотрудников делающих себя лучше. Здоровые и лояльяные кадры — хорошая реклама бренда работодателя</p>
+                </div>
+                <ul class="logo_list">
+                    <li><img src="img\Union.png" alt="логотип гармин"></li>
+                    <li><img src="img\Union-1.png" alt="логотип нью бэленс"></li>
+                    <li><img src="img\Union-2.png" alt="логотип асикс"></li>
+                    <li><img src="img\nike.png" alt="логотип найки"></li>
+                </ul>
+            </div>
         </section>
         <section class="review">
-            <img src="" alt="">
-            <h2 class="score_gradient">Сотрудники
+            <img class="review_image" src="img\people_image.jpg" alt="изображение довольного сотрудника и его сообщение в твитере">
+            <h2 class="score_gradient score_heading">Сотрудники
                 ценят заботу
                 работодателя</h2>
-            <div></div>
         </section>
         <section class="partners">
-            <h2 class="score_gradient"></h2>
+            <h2 class="score_gradient partners_heading">Нам доверяют</h2>
             <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
+                <li><img src="img\logos stripe.png" alt=""></li>
             </ul>
         </section>
         <section class="contact_form">
-            <h2 class="score_gradient">Вашему бизнесу
-                нужен стимул?</h2>
-            <p class="plain_text">Заполните форму, чтобы узнать больше о Стимуле для своей организации.
-            </p>
-            <p class="plain_text">Один из наших экспертов свяжется с вами в ближайшее время.</p>
-            <p class="plain_text">Required fields are followed by <abbr title="required">*</abbr>.</p>
+            <div class="form_header">
+                <h2 class="score_gradient">Вашему бизнесу
+                    нужен стимул?</h2>
+                <p class="plain_text">Заполните форму, чтобы узнать больше о Стимуле для своей организации.
+                </p>
+                <p class="plain_text">Один из наших экспертов свяжется с вами в ближайшее время.</p>
+            </div>
 
-            <form action="" method="get">
-                <fieldset>
-                    <legend>Форма регистрации</legend>
+            <form class="form_field" action="" method="get" onsubmit="return false">
+                    <div class="form_form">
+                        <div class="form_fied_item">
+                            <label class="form_label" for="name">Имя</label>
+                            <input class="form_input" type="text" id="name" name="user_name">
+                        </div>
+                        <div class="form_fied_item">
+                            <label class="form_label" for="second_name">Фамилия</label>
+                            <input class="form_input" type="text" id="second_name" name="user_second_name">
+                        </div>
+                        <div class="form_fied_item">
+                            <label class="form_label" for="organization_title">Название организации</label>
+                            <input class="form_input" type="text" id="organization_title" name="user_organization_title">
+                        </div>
 
-                    <label class="form_label" for="name">Имя</label>
-                    <input class="form_input" type="text" id="name" name="user_name">
-                    <label class="form_label" for="second_name">Фамилия</label>
-                    <input class="form_input" type="text" id="second_name" name="user_second_name">
-                    <label class="form_label" for="organization_title">Название организации</label>
-                    <input class="form_input" type="text" id="organization_title" name="user_organization_title">
-                    <label class="form_label" for="job_title">Должность</label>
-                    <input type="text" id="job_title" name="user_job_title">
-                    <label class="form_label" for="user_email">Электропочта</label>
-                    <input class="form_input" type="email" id="user_email" name="email_address">
-                    <label class="form_label" for="user_phone">Телефон</label>
-                    <input class="form_input" type="tel" id="user_phone" name="phone_number">
-                    <label class="form_comment" for="comment">Комментарий</label>
-                    <textarea id="comment" name="user_comment" cols="30" rows="10"></textarea>
-                    <input type="checkbox" unchecked id="consent" name="user_consent" value="consent">
-                    <label for="consent">Принимаю условия обработки персональных данных</label>
-                    <button type="submit"></button>
-                </fieldset>
+                        <div class="form_fied_item">
+                            <label class="form_label classy" for="job_title">Должность</label>
+                            <input class="form_input" type="text" id="job_title" name="user_job_title">
+                        </div>
+
+                        <div class="form_fied_item">
+                            <label class="form_label" for="mail">Электронная почта</label>
+                            <input class="form_input" type="email" id="mail" name="user_mail">
+                        </div>
+
+                        <div class="form_fied_item">
+                            <label class="form_label" for="phone">Номер телефона</label>
+                            <input class="form_input" type="tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" id="phone" name="telephone">
+                        </div>
+                        
+                        <div class="form_fied_item form_field_comment">
+                            <label class="form_comment" for="comment">Комментарий</label>
+                            <textarea class="form_field_comment form_field_comment_area" id="comment" name="user_comment" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div><button class="button" type="submit" id="second">Отправить</button></div>
+                    </div>
             </form>
         </section>
     </main>
