@@ -650,8 +650,8 @@ form {
     padding: 0;
     border: 0px solid #CCC;
     border-radius: 0em;
-    margin-left: 129px;
-    margin-right: 268px;
+
+
 }
 
 
@@ -781,13 +781,14 @@ color: #FFFFFF;
     flex-wrap: wrap;
     flex-direction: column;
     width:565px;
+    margin-right: 107px;
 }
 
 .contact_form {
     display: flex;
-    padding-left: 268px;
     padding-top: 110px;
     padding-bottom: 110px;
+
 }
 
 
@@ -854,7 +855,10 @@ color: #FFFFFF;
   }
 
   .form_wrapper{
+      display: flex;
+      justify-content: space-between;
       max-width: 1400px;
+      margin: 0 auto;
   }
 
 
