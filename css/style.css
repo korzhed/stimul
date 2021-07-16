@@ -650,6 +650,8 @@ form {
     padding: 0;
     border: 0px solid #CCC;
     border-radius: 0em;
+    margin-left: 129px;
+    margin-right: 268px;
 }
 
 
@@ -820,4 +822,41 @@ color: #FFFFFF;
       margin-right: 150px;
       width: 330px;
   }
+
+  .footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+   
+      height: 150px;
+
+      padding-right: 268px;
+      padding-left: 268px;
+
+
+      background-color: rgb(15, 15, 15);
+  }
+
+  .social_media {
+      display: flex;
+      flex-wrap: wrap;
+      width: 140px;
+      justify-content: space-between;
+      
+  }
+
+  .foter_text{
+      display: flex;
+      width: 400px;
+      justify-content: space-between;
+  }
+
+  .form_wrapper{
+      max-width: 1400px;
+  }
+
+
+ 
 
